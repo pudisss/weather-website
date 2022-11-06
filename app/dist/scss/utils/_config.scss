@@ -1,0 +1,8 @@
+/* Initialize mixins here */
+
+@mixin flex($align-item, $justify-content, $direction) {
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+    flex-direction: $direction;
+}

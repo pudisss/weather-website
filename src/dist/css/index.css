@@ -1,0 +1,117 @@
+/* forward file here */
+/* Import file here */
+/* Initialize data here */ /* Initialize mixins here */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main-section .container {
+  width: clamp(80%, 40rem, 45rem);
+  height: 50%;
+  background-color: #F9F9F9;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+.main-section .container .input-row {
+  position: relative;
+  top: 1.25rem;
+  left: 2.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+.main-section .container .input-row .input-cityname {
+  background-color: white;
+  width: clamp(75%, 12.5em, 10rem);
+  height: 50px;
+  border: none;
+  border-radius: 0.2em;
+}
+.main-section .container .input-row .submit {
+  width: 100px;
+  height: 50px;
+  background-color: #d4d4d4;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 0.2em;
+  transition: 0.3s ease-in;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main-section .container .input-row .submit:hover {
+  border: 3px solid #1a1a1a;
+}
+.main-section .container .input-row .submit::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  position: relative;
+  left: 2.5rem;
+}
+.main-section .container .input-row .submit:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  position: relative;
+  left: 2.5rem;
+}
+.main-section .container .input-row .submit::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  position: relative;
+  left: 2.5rem;
+}
+.main-section .container .location-section {
+  position: relative;
+  top: 4.5rem;
+  left: 2.5rem;
+}
+.main-section .container .location-section .cityName {
+  font-size: 42px;
+  font-weight: 700;
+  color: #181818;
+}
+.main-section .container .location-section .countryName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #D1D1D1;
+  text-transform: uppercase;
+}
+.main-section .container .temp-section {
+  position: relative;
+  top: 7.5rem;
+  left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.main-section .container .temp-section .temp {
+  font-size: 46px;
+  font-weight: 700;
+  color: #4B4B4B;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+/* Initialize data here */
+$font: 'Roboto Mono', monospace;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$font-weights: (
+    "regular": $regular,
+    "medium": $medium,
+    "bold": $bold,
+);
+
+@function weight($type-weight) {
+    @return map-get($font-weights, $type-weight );
+}
